@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jquery files</title>
+<!--jQuery declaration-->
+
+<script type="text/javascript" src="../js/jQuery.js"></script>
+
+
+
+<style type="text/css">
+	    #micapa{
+		font-size:1.5em;
+		font-weight: bold;
+		}
+
+		.error{
+			color:red;
+			background: #fcc;
+			padding: 20px;
+		}
+
+</style>
+
+       </head>
+
+<!------------comienzo  págian web---------------------------->
+    <body>
+
+<div id="micapa">Hola mundo!!!</div>
+
+contenido....................
+
+<p class="parrafo"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit ipsam corrupti eum praesentium minus provident facere nobis deleniti quo corporis, ipsum similique esse temporibus quis hic atque quod, soluta voluptatem!</p>
+<p class="parrafo"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit ipsam corrupti eum praesentium minus provident facere nobis deleniti quo corporis, ipsum similique esse temporibus quis hic atque quod, soluta voluptatem!</p>
+<p class="parrafo"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit ipsam corrupti eum praesentium minus provident facere nobis deleniti quo corporis, ipsum similique esse temporibus quis hic atque quod, soluta voluptatem!</p>
+<p class="parrafo"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit ipsam corrupti eum praesentium minus provident facere nobis deleniti quo corporis, ipsum similique esse temporibus quis hic atque quod, soluta voluptatem!</p>
+<p class="parrafo"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit ipsam corrupti eum praesentium minus provident facere nobis deleniti quo corporis, ipsum similique esse temporibus quis hic atque quod, soluta voluptatem!</p>
+
+<div class="parrafo"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi neque eligendi aspernatur doloribus fugiat hic nostrum at, harum voluptate quis natus maiores, alias sed fuga voluptates, repellendus voluptatibus magni ex.</div>
+
+
+
+
+
+	
+	<!-- evento onload en JS, ejecuta después que la página termina
+	     de cargar, después imagines,frames, iframes,los css, etc,
+	     todos los contenidos externos deben estar cargados  para  eje
+	     cutar  onload; mientras al contrario jQuery con (document).ready,tan solo  después de leer el texto, ya se está listo para el navegador. -->
+
+	     <script>
+          $(document).ready(function(){//codigo a ejecutar cuando tu navegador esté listo() //body
+
+                  $("#micapa").addClass("error");
+          	      alert("jquery está funcionando bien");
+          	      $(".parrafo").css("color", "#9A2EFE");
+          	      alert("deseas otro color y tamaño");
+          	      $(".parrafo").css("font-size","1.3em");
+          	      $("P.parrafo").css("color","#DF3A01");
+          	      $("div.parrafo").css("color","#0101DF");
+
+          });
+
+	     </script>
+fecha de última modificación: 
+	     <script type="text/javascript">
+
+          document.write(document.lastModified);
+          document.bgcolor="pink";
+          
+	     </script>
+
+    </body>
+</html>

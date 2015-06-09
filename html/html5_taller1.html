@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cj-Taller1-html5</title>
+</head>
+<body>
+
+<fieldset>
+
+      <form action="">
+	   <!--entrada tipo e-mail-->
+       <input type="email" name="email" placeholder="tu correo"/>
+       <br/>
+       <!--entrada tipo texto, con validación automática a través de required-->
+       <input type="text" required name="comentario" placeholder="tu comentario"/><br/>
+       <!--entrada que nos muestra  flechas ascendentes y descendentes con numeración ascendente y descendente-->
+       <input type="number" name="number" placeholder="ascendente y descendente"/><br/>
+       <!--progress bar, representa el grado de proceso de una tarea o acción -->
+       <progress max=100 value=30>#</progress><br/>
+       <!--formato de fecha sin zona horaria -->
+       <input type="date"  name="cumpleaños" />
+     </form>
+</fieldset>
+
+<!--Audios sin  necesidad de plugins como flash; en vez; formatos disponibles: mp3,Wap, Ogg -->
+
+            <audio controls="controls">
+	
+                  <source src="../audio/vida.mp3" type="audio/mpeg"/>
+                                   >
+            </audio><br/>
+
+  <!--videos sin necesidad de plugins como flash; en vez; formatos disponibles: mp4,WebM, Ogg -->  
+
+            <video width="300px"  controls="controls">
+
+                  <source src="../videos/video1.mp4" type="video/mp4"/>
+
+            </video><br/>
+
+     <!--Canvas, es un área donde podemos dibujar como si fuera un lienzo, permite actualización dinámica de los dibujos--> 
+
+<canvas id=" mycanvas" width="200" height="100"></canvas>
+
+
+</html>

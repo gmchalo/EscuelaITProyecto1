@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+	Div {
+         Display:inline-Block;
+         border-radius:200px 200px 0 0 / 100%;
+         Vertical-align:top;
+         Width:400px;
+         Height:400px;
+         Background-color:red;
+         inset-rectangle elipse;
+
+         }
+
+Img {
+         Vertical-align:top;
+    }
+
+
+
+
+

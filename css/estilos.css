@@ -1,0 +1,465 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*forma  de resetear los presets de los navegadores */
+*
+{
+	border: 0;
+	margin: 0;
+	padding:0;
+}
+
+/*forma  de llamar un tipo especial de tipo de letra */
+
+/*@font-face
+{
+font-family: Chalet;
+font-style: normal;
+font-weight: normal;
+src: url(../fonts/Chalet.eot);
+src: url(../fonts/Chalet.eot?#iefix)  format("embedded-opentype");
+src: url(../fonts/Chalet.woff) format("woff"),
+src: url(../fonts/Chalet.ttf) format("true-type"),
+src: url(../fonts/Chalet.svg#Chalet); format ("svg");
+
+}*/
+
+
+/* atributos de un enlace general a */
+
+a{
+	
+    /*--color fuente letra azul cobalto--*/
+	color: #020E76; 
+    /*el pointer es el que muestra posición cursor */
+	cursor:pointer;
+	/*--quitar del enlace el subrayado --*/
+	text-decoration: none;
+}
+
+
+/*hover en enlace principal es  */
+
+a:hover
+{
+	
+	color: #EF1DB0;/*color  fuente letra  rosada
+	                cuando ponemos cursor encima*/
+}
+
+
+body
+{     /*background:eef0f6-color hermoso gris para parrafos*/;
+	background: #CCFF99 url(../img/IMG00165-20140926-1142.jpg);	
+	color: #FF66aa;/*fondo cuerpo verde claro*/
+	font-family: verdana,helvetica;
+	font-size: 16px;/*12pt;100%,1em*/
+	text-align: center;
+}
+
+
+header
+{
+ background:  #c6ecf9;   /*url(../img/fondo2.jpg)*/
+ width:100%;
+-ms-box-sizing:border-box;/*microsoft*/
+-moz-box-sizing:border-box;/*firefox*/
+-o-box-sizing:border-box;/*opera*/
+-webkit-box-sizing:border-box;/*Zafari,Chrome, webkit es su motor*/
+ box-sizing:border-box;
+}
+
+
+header  h1,nav
+{  /*background: peru;*/
+	display: inline-block;
+	vertical-align: middle;
+	text-align:left; /*primera instrucción es la valida*/
+	width:20%;/*20% por cada elemento  20%  h1 y 
+	          20% nav para un total de 40%*/
+}
+
+
+img
+{
+	max-width:100%;/*esta instrucción hace de las imagines
+	                imagines objetos flexibles al
+	                100% contraibles*/
+	                
+}
+
+
+nav
+{
+	/*background: yellow;*/
+	font-size:1.2em;
+	text-align:right;
+	width: 70%;/*al hacer esto este 70% suma al 20% del
+	             del header h1 para un 90% total de ancho
+	             esta bien no más del 95% por bordes , 
+	             margenes y paddings*/
+}
+
+
+
+nav ul
+{
+	list-style: none;
+}
+
+
+
+
+nav li 
+{
+	cursor:pointer;
+	display:inline-block;
+	/*transform es atributo que permite sobre un objeto
+	rotación,moverse,escalarse,modificar caras*/
+
+	        transform:rotate(350deg);
+	    -ms-transform:rotate(350deg);
+	     -o-transform:rotate(350deg);
+	   -moz-transform:rotate(350deg);
+}
+
+
+nav li a
+{
+	background: #2E2EFE;/*fondo del enlace-azul rey*/
+	border:0.2em  #088A4B solid;/*borde verde oscuro*/
+	color: #BAEF1D;/*color letra verde claro*/
+	border-radius: 1em 2em 1em  2em;/*forma de las ezquinas*/
+} 
+
+
+nav li a:hover
+{
+	background: #241F18;/*fondo hover enlace negro*/
+	color:#F9F8F0;/*color letra negro*/
+}
+
+.cambio
+{2.5s    -ms-transition:all 2.5s ease-out;/*exlorer*/
+     -moz-transition:all 2.5s ease-out;/*firefox*/
+       -o-transition:all 2.5s ease-out;/*opera*/
+ -webkito-transition:all 2.5s ease-out;/*chrome y Zafari*/
+          transition:all 2.5s ease-out;/*y la instrucción*/
+}
+
+/*Breakpoints para el Responsive Design
+320 y 480    px para smartphones;
+600 y 768    px para tablets;
+1024 y 1200  px para PC´s
+Portrait:  es posición vertical;
+landscape: es posición horizontal;
+*/
+
+/*comienzo de las medias queries equivalentes a sentencias if
+en estilos  CSS*/
+
+@media screen and (max-width: 1366px)
+{
+   #contenido
+     {
+     	background: #925C5D;/*marron y pc´s HD*/
+     }
+        
+     nav
+        {
+         font-size: 1.1em;
+        }
+ }
+
+
+
+@media screen and (max-width: 1200px)
+{
+   #contenido
+     {
+     	background: #1974EC;/*azul rey y pc´s*/
+     }
+
+     nav
+        {
+         font-size: 1.0em;
+        }
+}
+
+
+@media screen and (max-width: 1024px)
+{
+   #contenido
+     {
+     	background: #F9030C;/*rojo y pc´s*/
+     }
+     nav
+
+     
+
+        header h1,nav
+        {
+        	display: block;
+            font-size: 1em;
+            width: 100%;
+            padding: 1em 0 1em 0;
+            text-align :center;
+        }
+}
+
+
+@media screen and (max-width: 768px) 
+{
+   #contenido
+     {
+     	background: #DC51C3 ;/*rosado y tablets*/
+     }
+
+        nav
+        {
+         font-size: 1.3em;
+        }
+        nav span
+        {
+        	display:block;
+        }
+        nav span:first-child
+        {
+        	padding-bottom: 1.5em
+        }
+
+}
+
+
+@media screen and (max-width: 600px) 
+{
+   #contenido
+     {
+     	background: #F98203 ;/*naranja y tablets*/
+     }
+
+      nav
+        {
+         font-size: 1.05em;
+        }
+
+}
+
+
+@media screen and (max-width: 480px)
+{
+   #contenido
+     {
+     	background: #2E0A04;/*negro para smartphones*/
+     }
+        nav
+        {
+         font-size: 1.2em;
+        }
+     
+        nav span 
+        {
+        	display: inline;
+        	
+        }
+
+   
+      nav li
+      {
+
+	     /*transform es atributo que permite sobre un objeto
+	     rotación,moverse,escalarse,modificar caras*/
+            display: inline;
+	        transform:rotate(0deg);
+	    -ms-transform:rotate(0deg);
+	     -o-transform:rotate(0deg);
+	   -moz-transform:rotate(0deg);
+	       width: 50%;
+      }
+
+
+      nav li a
+      {
+	    display:inline-block;
+	    margin: .25em auto;
+	    width: 45%;
+      }
+
+}
+
+
+
+@media screen and (max-width: 320px)
+{
+   #contenido
+     {
+     	background: #10ABDF;/*azul cobalto para smartphones*/
+     }
+     nav
+        {
+         font-size: 1em;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ul 
+
+{
+	border-style: solid;
+	border-width: thick;
+	border-color: #0F0;/*color borde contenedor
+	                    verde claro
+	width: auto;/*ancho del contenedor automático
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------test css file by GMCH---------*/
+
+
+div 
+{
+	border-style: solid;
+	color: #D76B00;
+	width: 1200px;
+	display: inline-block;
+}
+
+div div {
+	border-style: double;
+	border-color: green;
+	margin: 30px;
+	width: 320px;
+}
+
+div div div {
+	border-style: dashed;
+	border-color: red;
+	margin: 5px;
+	width: auto;
+}
+
+
+
+h1 {
+	border-style: solid;
+	border-color: #0000;/*negro*/
+	}
+
+
+
+h2 {
+	border-style: solid;
+	border-color: #F3C;
+}
+
+
+
+/*li {
+	border-style: solid;
+	border-width: 2px;
+	border-color: #60F;
+	margin: 1px;
+	width: 90px;*/
+}
+
+
+/*
+ul {
+	border-style: solid;
+	border-width: thick;
+	border-color: #0F0;color verde claro
+	margin: 5px;
+	width: 100px;
+	
+	
+	
+	
+	border-top-style: double;
+	border-right-style: double;
+	border-bottom-style: double;
+	border-left-style: double;*/
+	
+	/* Instrucciones que le dan color al borde de un selector ul.
+	
+	border-top-color: #33C; color azul reyazul rey
+	border-right-color: #33C;
+	border-bottom-color: #33C;
+	border-left-color: #33C;
+	
+	*/
+	
+	
+}
+*/
+
+
+body
+
+{
+	background: #CCFF99 url(../img/IMG00165-20140926-1142.jpg);
+	color: #FF6633;
+	font-family: verdana,helvetica;
+	font-size: 16px;
+	text-align: center;
+
+}
+
+p::first-letter{ 
+    color:red; 
+} 
+
+p::first-line{ 
+    color:blue; 
+} 
+
+/*h1::after{ 
+    content:"your best option"; 
+} 
+
+h1::before{ 
+    content:"welcome our web site"; 
+} 	
+*/
+
+p::selection{
+        background-color:blue;    
+
+}
+
+	
